@@ -28,4 +28,14 @@ jobs:
 
     - name: Run Tests
       run: |
-        poetry run pytest
+        poetry run coverage run -m pytest
+
+    - name: Run Tests
+      run: |
+        poetry run coverage xml
+
+    - name: Run Tests and send report to Codacy
+      run: |
+        curl -Ls https://coverage.codacy.com/get.sh | bash -s report -r coverage.xml
+      env:
+        CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
