@@ -1,6 +1,5 @@
-import pygame
-import pytest
 from unittest.mock import patch, MagicMock
+import pygame
 from GameEngine.loop import Game
 
 

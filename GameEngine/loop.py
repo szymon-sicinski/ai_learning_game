@@ -1,5 +1,6 @@
 import pygame
 
+
 class Game:
     @staticmethod
     def start_game():
