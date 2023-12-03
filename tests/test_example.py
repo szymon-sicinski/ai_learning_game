@@ -3,5 +3,5 @@ def test_always_passes():
 
 # sample test that will fail
 def test_always_fails():
-    assert 1 + 1 == 3
+    assert 1 + 2 == 3
     

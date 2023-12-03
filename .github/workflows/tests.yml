@@ -30,7 +30,7 @@ jobs:
       run: |
         poetry run coverage run -m pytest
 
-    - name: Run Tests
+    - name: Generate coverage report
       run: |
         poetry run coverage xml
 
